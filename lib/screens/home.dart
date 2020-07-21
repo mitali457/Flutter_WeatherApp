@@ -155,6 +155,7 @@ class _HomescreenState extends State<Homescreen> {
                                     Text(
                                         weatherData.weather.current.weatherDescriptions[0]
                                             ,
+                                            textAlign: TextAlign.center,
                                         style: TextStyle(
                                             fontSize: 30,
                                             color: Colors.blueGrey,
