@@ -109,7 +109,7 @@ class _HomescreenState extends State<Homescreen> {
                          
                          SizedBox(height:10),
                           Padding(
-                            padding: const EdgeInsets.only(left:100,top:70,right:30),
+                            padding: const EdgeInsets.only(left:80,top:50,right:40),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.center,
                               mainAxisAlignment: MainAxisAlignment.center,
@@ -156,14 +156,14 @@ class _HomescreenState extends State<Homescreen> {
                                         weatherData.weather.current.weatherDescriptions[0]
                                             ,
                                         style: TextStyle(
-                                            fontSize: 38,
+                                            fontSize: 30,
                                             color: Colors.blueGrey,
                                             fontWeight: FontWeight.bold),
                                       ),
                               ],
                             ),
                           ),
-                          SizedBox(height:10),
+                          SizedBox(height:20),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
@@ -216,7 +216,7 @@ class _HomescreenState extends State<Homescreen> {
                           
                              
                           Padding(
-                            padding: const EdgeInsets.only(left:60,top:70),
+                            padding: const EdgeInsets.only(left:60,top:20),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.start,
                               children: [
