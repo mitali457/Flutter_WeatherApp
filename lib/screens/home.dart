@@ -109,10 +109,10 @@ class _HomescreenState extends State<Homescreen> {
                          
                          SizedBox(height:10),
                           Padding(
-                            padding: const EdgeInsets.only(left:120,top:70),
+                            padding: const EdgeInsets.only(left:100,top:70,right:30),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisAlignment: MainAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Text(weatherData.weather.location.name,
                                   //cityController.text,
@@ -151,6 +151,7 @@ class _HomescreenState extends State<Homescreen> {
                                           color: Colors.blueGrey,
                                           fontWeight: FontWeight.bold),
                                     ),
+                                   
                                     Text(
                                         weatherData.weather.current.weatherDescriptions[0]
                                             ,
@@ -179,6 +180,23 @@ class _HomescreenState extends State<Homescreen> {
                                           fontWeight: FontWeight.w500),)
                                 ],
                               ),
+                              Container(height:30,
+                              width:2,color: Colors.blueGrey,),
+                              Column(
+                                children: [
+                                  Text('${weatherData.weather.current.feelslike}°c',
+                                  style: TextStyle(
+                                          fontSize: 16,
+                                          color: Colors.blueGrey,
+                                          fontWeight: FontWeight.bold),),
+                                  Text('Feels Like',style: TextStyle(
+                                          fontSize: 20,
+                                          color: Colors.blueGrey,
+                                          fontWeight: FontWeight.w500),)
+                                ],
+                              ),
+                               Container(height:30,
+                              width:2,color: Colors.blueGrey,),
                               Column(
                                 children: [
                                   Text('${weatherData.weather.current.pressure.toString()}mBar',
@@ -191,7 +209,8 @@ class _HomescreenState extends State<Homescreen> {
                                           color: Colors.blueGrey,
                                           fontWeight: FontWeight.w500),)
                                 ],
-                              )
+                              ),
+                              
                             ],
                           ),
                           
